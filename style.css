@@ -33,6 +33,10 @@ ol{
   color: red;
   text-decoration: underline;
 }
+.none{
+  color:blue;
+  text-decoration: underline;
+}
 @media(max-width:800px){
   #grid{
     display:block;
