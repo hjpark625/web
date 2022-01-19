@@ -4,21 +4,15 @@
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <input type="button" value="야간모드" onclick="
-    var target = document.querySelector('body');
-    if(this.value === '야간모드'){
-      target.style.backgroundColor='black';
-      target.style.color='white';
-      this.value = '주간모드';
-    } else{
-      target.style.backgroundColor='white';
-      target.style.color='black';
-      this.value = '야간모드';
-    }
-  ">
+  <div style="text-align:center;">
+    <input id="night_day" type="button" value="야간모드" onclick="
+      nightDayHandler(this);
+    ">
   </div>
 <div id="grid">
 <ol>
